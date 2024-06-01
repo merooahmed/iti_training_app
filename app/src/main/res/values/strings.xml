@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">iticourse</string>
+
+    <string name="football">Football</string>
+    <string name="handball">Handball</string>
+    <string name="volleyball">Volleyball</string>
+    <string name= "popup_title">Title</string>
+
+
+</resources>

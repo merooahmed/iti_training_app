@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="vertical"
+
+            />
+        <TextView
+
+            android:id="@+id/username_tv"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Username:"
+            android:layout_margin="60dp"
+            android:textColorLink="@color/purple_200"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="60dp"
+            android:text="Password:"
+            android:textColorLink="@color/purple_200"
+            app:layout_constraintTop_toBottomOf="@id/username_tv"
+            tools:ignore="TouchTargetSizeCheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+             />
+
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/username_et"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintStart_toEndOf="@id/username_tv"
+            app:layout_constraintTop_toTopOf="@id/username_tv"
+            android:text="kminchelle"
+            />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+
+            app:layout_constraintStart_toEndOf="@id/password_tv"
+            app:layout_constraintTop_toTopOf="@id/password_tv"
+            android:text="0lelplR"
+
+            tools:ignore="LabelFor"
+            android:autofillHints="" />
+
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="LOGIN with"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <CheckBox
+            android:id="@+id/football_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/username_tv"
+            app:layout_constraintStart_toStartOf="@id/password_tv"
+            android:text="@string/football"
+            android:layout_marginBottom="100dp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/handball_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/handball"
+            app:layout_constraintStart_toStartOf="@id/password_tv"
+            app:layout_constraintTop_toBottomOf="@id/football_ck"
+            android:layout_marginBottom="60dp"
+
+
+            />
+        <CheckBox
+            android:id="@+id/volleyball_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/volleyball"
+            app:layout_constraintStart_toStartOf="@id/password_tv"
+            app:layout_constraintTop_toBottomOf="@id/handball_ck"
+            android:layout_marginBottom="10dp"
+
+
+
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/username_tv"
+            app:layout_constraintTop_toBottomOf="@id/volleyball_ck">
+
+            <RadioButton
+                android:id="@+id/male_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Male"
+                android:checked="true"
+                android:layout_marginTop="100dp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/female_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Female"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </RadioGroup>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
